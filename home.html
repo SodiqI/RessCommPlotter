@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RessComm Plotter - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #2c3e50, #1a2530);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .nav-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .nav-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .nav-card h3 {
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+
+        .nav-card p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .btn.secondary {
+            background: transparent;
+            border: 2px solid #3498db;
+        }
+
+        .btn.secondary:hover {
+            background: #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RessComm Plotter</h1>
+        <p>Welcome to RessComm Plotter - Your comprehensive land management and area determination solution for building resilient communities.</p>
+        
+        <div class="nav-grid">
+            <div class="nav-card">
+                <h3>🏠 Landing Page</h3>
+                <p>Learn about RessComm, our mission, team, and comprehensive land management solutions.</p>
+                <a href="landing.html" class="btn">Visit Landing Page</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>✏️ Manual Plotter</h3>
+                <p>Create precise land area polygons manually with coordinate input and real-time calculations.</p>
+                <a href="index.html" class="btn">Manual Plotter</a>
+            </div>
+            
+            <div class="nav-card">
+                <h3>📊 Excel Plotter</h3>
+                <p>Upload Excel files and automatically plot multiple land areas with attribute data integration.</p>
+                <a href="excel-plotter.html" class="btn">Excel Plotter</a>
+            </div>
+        </div>
+        
+        <div style="margin-top: 3rem;">
+            <p style="font-size: 1rem; opacity: 0.8;">Choose your preferred plotting method or learn more about our mission on the landing page.</p>
+        </div>
+    </div>
+</body>
+</html>
